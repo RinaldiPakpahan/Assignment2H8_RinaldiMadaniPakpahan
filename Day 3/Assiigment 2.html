@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BRIMO</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="syle.css">
+    </head>
+    <body>
+        <ul class="navbar navbar-expand-lg navbar-light bg-light nav justify-content-end nav-tabs" style="padding-right: 280px;">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Challenge.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Challenge.html">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My Inventory</a>
+              </li>
+        </ul>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="BRIMO.png" alt="BRIMO" width="200" height="200">
+                                </td>
+                                <td>
+                                    <H2 id="name">Rinaldi Madani Pakpahan</H2>
+                                    <p id="rols">Infrastructure Engineer</p>
+                                    <button class="btn btn-primary"  data-toggle="modal" data-target="#form" id="edit" type="button" style="margin-right: 15px;">Edit</button>                                      
+                                    <button class="btn btn-outline-success" type="button">Resume</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card" style="padding-top: 55px; padding-bottom: 45px; padding-left: 30px;">
+                        <table>
+                            <tr>
+                                <td>Availability</td>
+                                <td id="avai">Full Time</td>
+                            </tr>
+                            <tr>
+                                <td>Usia</td>
+                                <td id="usai">17</td>
+                            </tr>
+                            <tr>
+                                <td>Lokasi</td>
+                                <td id="lok">Jakarta Barat</td>
+                            </tr>
+                            <tr>
+                                <td>Pengalaman</td>
+                                <td id="expe">3</td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td id="mail">rinaldi.pakpahan@gmail.com</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="form-group">
+                    <label for="nama">Nama</label>
+                    <input type="text" class="form-control" id="nama" placeholder="Ketikan Nama Anda">
+                </div>
+                <div class="form-group">
+                    <label for="role">Role</label>
+                    <input type="text" class="form-control" id="role" placeholder="Role">
+                </div>
+                <div class="form-group">
+                    <label for="availability">Availability</label>
+                    <input type="text" class="form-control" id="availability" placeholder="Availability">
+                    </div>
+                    <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="text" class="form-control" id="age" placeholder="Age">
+                    </div>
+                    <div class="form-group">
+                        <label for="Lokasi">Lokasi</label>
+                        <input type="text" class="form-control" id="Lokasi" placeholder="Lokasi">
+                    </div>
+                    <div class="form-group">
+                        <label for="YearsExperience">Years Experience</label>
+                        <input type="text" class="form-control" id="YearsExperience" placeholder="Years Experience">
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">Email</label>
+                        <input type="text" class="form-control" id="Email" placeholder="Email">
+                    </div>
+                </form>
+            </div>
+            <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                      <h5 class="modal-title" id="exampleModalLabel">Create Account</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <form id="profileForm">
+                      <div class="modal-body">
+                        <div class="form-group">
+                            <label for="nama">Nama</label>
+                            <input type="text" class="form-control" id="nama1" placeholder="Ketikan Nama Anda">
+                        </div>
+                        <div class="form-group">
+                            <label for="role">Role</label>
+                            <input type="text" class="form-control" id="role1" placeholder="Role">
+                        </div>
+                        <div class="form-group">
+                            <label for="availability">Availability</label>
+                            <input type="text" class="form-control" id="availability1" placeholder="Availability">
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <input type="text" class="form-control" id="age1" placeholder="Age">
+                        </div>
+                        <div class="form-group">
+                            <label for="Lokasi">Lokasi</label>
+                            <input type="text" class="form-control" id="Lokasi1" placeholder="Lokasi">
+                        </div>
+                        <div class="form-group">
+                            <label for="YearsExperience">Years Experience</label>
+                            <input type="text" class="form-control" id="YearsExperience1" placeholder="Years Experience">
+                        </div>
+                        <div class="form-group">
+                            <label for="Email">Email</label>
+                            <input type="text" class="form-control" id="Email1" placeholder="Email">
+                        </div>
+                      </div>
+                      <div class="modal-footer border-top-0 d-flex justify-content-center">
+                        <button type="submit" id="submitForm" class="btn btn-success">Submit</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            <div class="d-grid gap-2">
+                <button class="btn btn-success" id="submit" type="button">Submit</button>
+            </div>
+        </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="DOM.js"></script>
+</html>
